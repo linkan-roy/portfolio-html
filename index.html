@@ -3,105 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <!-- section navbar -->
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">My Skills</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
+    <meta name="author" content="linkan roy" />
+    <meta name="keywords" content="portfolio, html, linkan roy" />
+    <meta name="description" content="Linkan Roy is a software developer" />
 
-    <!-- section: Intro -->
-    <header id="intro">
-      <h1>Linkan Roy</h1>
-      <p><em>Web Designer</em></p>
-      <img
-        src="./images/Linkan1.png"
-        alt="profile image"
-        title="linkan"
-        height="150"
-      />
-      <hr />
+    <title>portfolio</title>
+
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    body {
+      background-color: rgb(217, 215, 213);
+      font-family: "Roboto", serif;
+    }
+  </style>
+
+  <body>
+    <header>
+      <!-- section navbar -->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- section: about me -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p><strong>Experience:</strong> Beginner Web Designer</p>
-      <p><strong>Education:</strong> BSc in Computer Science and Engineering</p>
-    </section>
+    <main>
+      <!-- section: Intro -->
+      <section id="intro">
+        <h1>Linkan Roy</h1>
+        <p><em>Web Designer</em></p>
+        <img
+          src="./images/Linkan1.png"
+          alt="profile image"
+          title="linkan"
+          height="150"
+        />
+        <hr />
+      </section>
 
-    <!-- Section: Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <table border="1" cellpadding="5" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Technology</th>
-            <th>Profiency</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Expert</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Expert</td>
-          </tr>
-          <tr>
-            <td>javaScript</td>
-            <td>Intermediate</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!-- section: about me -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p><strong>Experience:</strong> Beginner Web Designer</p>
+        <p>
+          <strong>Education:</strong> BSc in Computer Science and Engineering
+        </p>
+      </section>
 
-    <!-- Section: Project -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <ol>
-        <li>
-          <a href="https://linkan440.github.io/personal-site/" target="_blank"
-            >Portfolio Website</a
-          >
-        </li>
-        <li>Blog Website</li>
-        <li>E-Commerce Website</li>
-      </ol>
-    </section>
-    <!-- Section: Contact -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
+      <!-- Section: Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Profiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td rowspan="2">Expert</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>javaScript</td>
+              <td>Intermediate</td>
+            </tr>
+          </tbody>
+        </table>
+
         <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <h3>Skills Progress</h3>
+          <div>
+            <label for="htmlProgress">HTML:</label>
+            <progress id="htmlProgress" value="90" max="100">90%</progress>
+          </div>
+          <div>
+            <label for="cssProgress">CSS:</label>
+            <progress id="cssProgress" value="85" max="100">85%</progress>
+          </div>
+          <div>
+            <label for="javascriptProgress">JavaScript:</label>
+            <progress id="javascriptProgress" value="80" max="100">
+              80%
+            </progress>
+          </div>
         </div>
+
         <div>
-          <label for="emial">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <h3>Experience Label</h3>
+          <label for="experienceLabel">Experience: </label>
+          <meter id="experienceLabel" min="0" max="10" value="1"> 1 years </meter>
         </div>
-        <div>
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="20" rows="10"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-      </form>
-    </section>
+      </section>
+
+      <!-- Section: Project -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+          <li>
+            <a href="https://linkan440.github.io/personal-site/" target="_blank"
+              >Portfolio Website</a
+            >
+          </li>
+          <li>Blog Website</li>
+          <li>E-Commerce Website</li>
+        </ol>
+      </section>
+
+      <video width="300px" controls>
+        <source src="videos/demo.mp4" type="video/mp4" />
+        your browser do not support this video
+      </video>
+      <!-- Section: Contact -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/movqjnow" method="POST">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="emial">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="55"
+              required
+            />
+          </div>
+          <div>
+            <label for="website">Website:</label>
+            <input
+              type="url"
+              id="website"
+              name="website"
+              pattern="https?://.+"
+            />
+          </div>
+          <div>
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" />
+          </div>
+          <div>
+            <label for="subject">Subject:</label>
+            <select name="subject" id="subject">
+              <option value="inquiry">Inquiry</option>
+              <option value="feedback">Feeback</option>
+              <option value="job">Job Opportunity</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
     <!-- Section: Footer -->
     <footer>
       <p>copyright reserved by &copy;Linkan2024</p>
       <p>Developed with &hearts;</p>
       <a href="tel:+8801629054376">Call Me</a>
       <a href="mailto:linkanroy440@gmail.com">Email Me</a>
+
+      <div>
+        <h3>Follow Me</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/linkan.roy.94" target="_blank"
+              ><i class="fa-brands fa-facebook"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/linkan.roy.94" target="_blank"
+              ><i class="fa-brands fa-youtube"></i> Youtube</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/linkan.roy.94" target="_blank"
+              ><i class="fa-brands fa-instagram"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/linkan.roy.94" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107700.68961172193!2d89.44986298832565!3d22.845507953515572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9071cb47152f%3A0xf04b212290718952!2sKhulna!5e1!3m2!1sen!2sbd!4v1730093641031!5m2!1sen!2sbd"
+          title="khulna"
+          width="300"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </footer>
   </body>
 </html>
